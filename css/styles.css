@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +6,36 @@
 }
 
 body {
-    background-color: dodgerblue;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
+
+.container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.container {
+    background-color: cornsilk;
+    width: 300px;
+    height: 200px;
+    padding: 2rem;
+
+
+    
+    
+
+
+}
+
+.search-box {    
+    display:flex;
+    flex-direction: column;
+
+}
+
+
