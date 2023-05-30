@@ -6,17 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
+
     <!--Font-Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <title>Clima Tempo</title>
 </head>
 <body>
     <div class="container">
-        <h2>Informe a cidade</h2>
+        <h1>Informe a cidade</h1>
             <div class="search-box">
-                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>                            
+                <span><input type="text" id="city" placeholder="Digite aqui a cidade..."></span>
+                <button type="submit"><span><i class="fa-solid fa-magnifying-glass"></i></span> </button>  
+            </div>
+            <div class="wheater">
+                <div class="temperature">38&deg;</div>
+            </div>
+            <div class="wheater-info">
+                <div class="wind"></div>
+                <div class="humidity"></div>
                 
-                <input type="text" id="city" placeholder="Digite aqui a cidade...">
             </div>
     </div>
     
