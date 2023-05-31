@@ -9,13 +9,14 @@
 
 body {
     background-image: url(https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #302e2e;
 
 }
 
@@ -37,13 +38,14 @@ body {
 }
 
 .container input {
-    width: 250px;
+    width: 280px;
     outline: none;
     height: 2rem;
     padding: .3rem;
     border-radius: 5px;
     border: none;
     font-size: 1rem;
+    padding-left: 1rem;
 }
 
 .container input::placeholder {
@@ -52,9 +54,8 @@ body {
 
 .search-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -68,10 +69,74 @@ button {
 
 }
 
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather h2 span#city {
+    margin:  0px 1rem;
+}
+
+#city {
+    text-transform: capitalize;
+}
 .fa-location-dot {
     color:red;
     font-size: 1.5rem;
 
 }
+
+.hide {
+    display: none;
+}
+
+#temperature {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;    
+}
+
+p#description {
+    border-right: 2px solid #3F3F3F;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    text-transform: capitalize;
+
+}
+
+#humidity-icon span {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 2px solid #3f3f3f;
+
+}
+
+img#country {
+    width: 2.5rem;
+}
+
+
+
+
 
 
