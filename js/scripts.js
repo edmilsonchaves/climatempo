@@ -6,6 +6,7 @@ const restURL = '/flat/64.png';
 const cityInput = document.querySelector("#inputCity");
 const searchBtn = document.querySelector("#search");
 
+let content = document.querySelector('.content');
 let cityElement = document.querySelector("#city");
 let country = document.querySelector("#country");
 let temperature = document.querySelector("#temperature span");
@@ -36,7 +37,8 @@ const showWeatherData = async(city) => {
     weatherIcon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     humidity.innerText = data.main.humidity + '%';
     wind.innerText = parseInt(data.wind.speed) + ' km/h';
-
+    content.classList.remove('hide');
+    
 
 
 }
@@ -49,5 +51,14 @@ searchBtn.addEventListener('click', (e) =>{
     const city = cityInput.value
 
     showWeatherData(city)
+})
+
+cityInput.addEventListener("keyup", (e) => {
+    
+    if(e.code === "Enter") {
+        const city = e.target.value;
+
+        showWeatherData(city);
+    }
 })
 
